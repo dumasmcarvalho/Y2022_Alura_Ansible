@@ -1,0 +1,9 @@
+# General
+.vagrant/
+
+# Log Files
+*.log
+
+# SSH Keys
+id_bionic
+*.pub

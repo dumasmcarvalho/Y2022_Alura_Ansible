@@ -1,0 +1,15 @@
+---
+- name: "Instala pacotes de dependências do WordPress e PHP"
+  apt:
+    name:
+    - php7.2
+    - apache2
+    - libapache2-mod-php7.2
+    - php7.2-gd
+    - php-ssh2
+    - libmcrypt-dev
+    - php7.2-mysql
+    state: latest
+    update_cache: yes
+    cache_valid_time: 3600
+  become: yes
